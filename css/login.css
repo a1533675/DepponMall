@@ -1,0 +1,24 @@
+.toptitle {
+    background-color: #3a3c64;
+    height: 50px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+table {
+    margin-top: 30px;
+    text-align: center;
+}
+
+body,p {
+    margin: 0;
+}
+.login{
+    width:60px;
+    height: 30px;
+}

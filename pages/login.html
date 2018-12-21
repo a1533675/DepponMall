@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <script type="text/javascript" src="../scripts/checkLogin.js"></script>
+</head>
+<body>
+<div class="toptitle">
+    <h1>登录界面</h1>
+</div>
+<form name="logindemo" action="">
+    <table align="center" border="0" cellpadding="4">
+        <tr>
+            <td align="right">UserName：</td>
+            <td align="left"><input id="username" type="text" placeholder="please input username"/></td>
+        </tr>
+        <tr>
+            <td align="right">PassWord：</td>
+            <td align="left"><input id="password" type="password" placeholder="password"/></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input class="login" id="login" type="button" name="login" value="登录" onclick="checkLogin()"/>
+                <input id="reset" type="reset" name="reset" value="重置"
+                       style="width:60px;height: 30px;margin-left: 60px;margin-top: 10px"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="register.html" target="_self">没有帐号？注册</a></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

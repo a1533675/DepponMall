@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应布局</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        /*蓝色绝对定位，内容区域内边距，左侧红块左浮动，右侧黄块设置左边距；注意使用box-sizing: border-box；改变盒模型*/
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: blue
+        }
+
+        .content {
+            position: relative;
+            padding: 110px 0 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .left {
+            width: 200px;
+            height: 100%;
+            float: left;
+            background: red;
+        }
+
+        .right {
+            height: 100%;
+            background: yellow;
+            margin-left: 210px;
+        }
+    </style>
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

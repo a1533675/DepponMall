@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册界面</title>
+    <script type="text/javascript" src="../scripts/checkRegister.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+
+</head>
+<body>
+<div class="toptitle">
+    <h1>用户注册界面</h1>
+</div>
+<form name="registerdemo" action="" >
+    <table align="center" border="0">
+        <tr>
+            <td align="right">UserName：</td>
+            <td align="left"><input id="username" type="text" placeholder="please input username"/></td>
+        </tr>
+        <tr>
+            <td align="right">PassWord：</td>
+            <td align="left"><input id="password" type="password" placeholder="password"/></td>
+        </tr>
+        <tr>
+            <td align="right">TryAgain：</td>
+            <td align="left"><input id="passwordagain" type="password" placeholder="input password again."/></td>
+        </tr>
+        <tr>
+            <td align="right">Email：</td>
+            <td align="left"><input id="email" type="email" placeholder="Email"/></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input id="register" type="button" name="submit" value="注册" style="width:60px;height: 30px;" onclick="checkRegister()"/>
+                <input id="reset" type="reset" name="reset" value="重置" style="width:60px;height: 30px;margin-left: 60px;margin-top: 10px"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="login.html" target="_self">已有账号？登录</a> </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
